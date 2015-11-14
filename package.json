@@ -1,0 +1,31 @@
+{
+  "name": "generator-tux",
+  "version": "0.0.0",
+  "description": "Trustifier UX components generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "ahmed-masud/generator-tux",
+  "author": {
+    "name": "Ahmed Masud",
+    "email": "ahmed.masud@trustifier.com",
+    "url": "https://github.com/ahmed-masud"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.20.0",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2",
+    "lodash": "^3.10.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}

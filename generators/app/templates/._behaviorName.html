@@ -1,0 +1,13 @@
+<script src="<?= pathToElements ?>/tux/tux.js"></script>
+<script>
+  /* @polymerBehavior Tux.<?= entityNameCamel ?> */
+
+  Tux.<?= entityNameCapital ?>Impl =  {
+    properties: {
+      name: "<?= behaviorNameCapital ?>"
+    }
+  };
+
+  /* @polymerBehavior */
+  Tux.<?= behaviorNameCapital -?> = Tux.<?= behaviorNameCapital ?>Impl;
+</script>

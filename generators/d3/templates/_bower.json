@@ -1,0 +1,27 @@
+{
+  "name": "<?= entityName ?>",
+  "version": "<?= version ?>",
+  "homepage": "https://github.com/tux-d3/<?= entityName ?>",
+  "authors": [
+    "Ahmed Masud <ahmed.masud@trustifier.com>"
+  ],
+  "description": "TUX-D3 <?= entityName ?> element",
+  "main": "<?= entityName ?>.html",
+  "moduleType": [],
+  "keywords": [
+    "d3js",
+    "tux-d3",
+    "d3-chart",
+    "webcomponents",
+    "trustifier",
+    "tux"
+  ],
+  "license": "BSD-3-Clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
