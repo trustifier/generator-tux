@@ -1,8 +1,11 @@
-<script src="<?= pathToElements ?>/tux/tux.js"></script>
+<link rel='import' href='<?= pathToBower ?>/polymer/polymer.html'>
+<link rel="import" href='<?= pathToBower ?>/expandjs/expandjs.html'>
+<link rel="import" href="../tux/tux.html">
+<link rel="import" href="<?= pathToElements ?>/tux/tux.html">
 <script>
   /* @polymerBehavior Tux.<?= entityNameCamel ?> */
 
-  Tux.<?= entityNameCapital ?>Impl =  {
+  Tux.<?= behaviorNameCapital ?>Impl =  {
     properties: {
       name: "<?= behaviorNameCapital ?>"
     }
