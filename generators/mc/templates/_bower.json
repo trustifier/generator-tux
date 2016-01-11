@@ -13,7 +13,6 @@
     "<?= entityName ?>",
     "webcomponents",
     "trustifier",
-    "tux"
   ],
   "license": "BSD-3-Clause",
   "ignore": [

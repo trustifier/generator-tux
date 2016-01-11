@@ -1,13 +1,13 @@
-<script src="<?= pathToElements ?>/tux-d3/tux-d3.js"></script>
+<link rel="import" href="<?= pathToElements ?>/magic-canvas/magic-canvas.html">
 <script>
-  /* @polymerBehavior Tux.<?= entityNameCamel ?> */
+  /* @polymerBehavior MC.<?= entityNameCamel ?> */
 
-  TuxD3.<?= behaviorNameCapital ?>Impl =  {
+  MC.<?= behaviorNameCapital ?>Impl =  {
     properties: {
       name: "<?= behaviorNameCapital ?>"
     }
   };
 
   /* @polymerBehavior */
-  TuxD3.<?= behaviorNameCapital -?> = TuxD3.<?= behaviorNameCapital ?>Impl;
+  MC.<?= behaviorNameCapital -?> = MC.<?= behaviorNameCapital ?>Impl;
 </script>
