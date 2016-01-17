@@ -170,9 +170,7 @@ module.exports = yeoman.generators.Base.extend({
     //  x-foo/x-foo.html
 
     this.props.pathToEntity = path.join(this.props.basePath , this.props.entityName, this.props.entityName);
-    this.props.pathToBower = path.relative(
-      path.dirname(this.props.pathToEntity),
-      path.join(process.cwd(), this.props.basePath, '../bower_components')
+    this.props.pathToBower = '/bower_components';
     );
     this.props.pathToElements = path.relative(
       path.dirname(this.props.pathToEntity),
@@ -190,8 +188,8 @@ module.exports = yeoman.generators.Base.extend({
     ));
     this.fs.copyTpl(this.templatePath('._' + this.props.entityType + 'Name.html'),
       this.destinationPath(this.props.pathToEntity+'.html'), this.props, { delimiter: '\?' });
-    this.fs.copyTpl(this.templatePath('._' + this.props.entityType + 'Name.css'),
-      this.destinationPath(this.props.pathToEntity+'.css'), this.props, { delimiter: '\?' });
+    this.fs.copyTpl(this.templatePath('._' + this.props.entityType + 'Name-style.html'),
+      this.destinationPath(this.props.pathToEntity+'-style.html'), this.props, { delimiter: '\?' });
     if(this.props.generateElementBehavior) {
       this.fs.copyTpl(this.templatePath('._behaviorName.html'),
       this.destinationPath(this.props.pathToEntity+ "-behavior.html"), this.props, { delimiter: '\?'});
