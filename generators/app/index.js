@@ -171,7 +171,6 @@ module.exports = yeoman.generators.Base.extend({
 
     this.props.pathToEntity = path.join(this.props.basePath , this.props.entityName, this.props.entityName);
     this.props.pathToBower = '/bower_components';
-    );
     this.props.pathToElements = path.relative(
       path.dirname(this.props.pathToEntity),
       path.join(process.cwd(), this.props.basePath)
