@@ -1,0 +1,26 @@
+{
+  "name": "<?= entityName ?>",
+  "version": "<?= version ?>",
+  "homepage": "https://github.com/magic-canvas/<?= entityName ?>",
+  "authors": [
+    "Ahmed Masud <ahmed.masud@trustifier.com>"
+  ],
+  "description": "magic-canvas <?= entityName ?> element",
+  "main": "<?= entityName ?>.html",
+  "moduleType": [],
+  "keywords": [
+    "magic-canvas",
+    "<?= entityName ?>",
+    "webcomponents",
+    "trustifier",
+    "tux"
+  ],
+  "license": "BSD-3-Clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,30 @@
+<!--
+@license
+Copyright (c) 2015 Tux Authors
+-->
+<link rel="import" href="<?= pathToBower ?>/polymer/polymer.html">
+<link rel="import" href="<?= pathToElements ?>/tux/tux.html">
+<? if(generateElementBehavior) { -?>
+<link rel="import" href="<?= entityName ?>-behavior.html">
+<? } -?>
+<dom-module id="<?= entityName ?>">
+  <link rel="import" type="css" href="<?= entityName ?>.css">
+  <template>
+    <h1><?= entityName ?> element</h1>
+    <content></content>
+  </template>
+  <script>
+  (function() {
+    // initialize anything common to all instances here
+    // like static variables.
+    Polymer({
+      is: "<?= entityName ?>"
+<? if(generateElementBehavior) { -?>,
+      // implement the core behavior for this element in
+      // <?= entityName ?>-behavior.html
+      behaviors: [ TuxD3.<?= entityNameCapital ?> ]
+<? } ?>
+    });
+  })();
+  </script>
+</dom-module>

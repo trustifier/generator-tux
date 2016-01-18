@@ -1,0 +1,13 @@
+<script src="<?= pathToElements ?>/tux-d3/tux-d3.js"></script>
+<script>
+  /* @polymerBehavior Tux.<?= entityNameCamel ?> */
+
+  TuxD3.<?= behaviorNameCapital ?>Impl =  {
+    properties: {
+      name: "<?= behaviorNameCapital ?>"
+    }
+  };
+
+  /* @polymerBehavior */
+  TuxD3.<?= behaviorNameCapital -?> = TuxD3.<?= behaviorNameCapital ?>Impl;
+</script>
